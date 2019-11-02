@@ -14,7 +14,7 @@ public class ClassPoolTest {
     public static void main(String[] args) {
         try {
             ClassPool classPool = ClassPool.getDefault();
-// get ctClass (compile time class)
+// get introspection (compile time class)
             CtClass fooClass = classPool.get("com.mryt.kayson.test.data.Foo");
 // modify class
             fooClass.setSuperclass(classPool.get("com.mryt.kayson.test.data.Bar"));
