@@ -14,9 +14,9 @@ import static com.jayway.restassured.RestAssured.given;
 import static com.jayway.restassured.RestAssured.when;
 import static org.hamcrest.CoreMatchers.is;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = App.class)
-@WebAppConfiguration
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(classes = App.class)
+//@WebAppConfiguration
 @IntegrationTest({"server.port:0",
         "spring.datasource.url:jdbc:h2:mem:Javassist.learn;DB_CLOSE_ON_EXIT=FALSE"})
 public class HelloControllerTest {

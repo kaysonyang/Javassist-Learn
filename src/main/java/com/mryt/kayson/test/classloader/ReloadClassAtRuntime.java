@@ -33,7 +33,7 @@ public class ReloadClassAtRuntime {
      * Refresh framework and application server settings
      * The only unsupported operation is hierarchy change (change the superclass or remove an interface).
      *
-     * DCEVM realizes hotswap on JVM level. HotwapAgent does the same on level of Java frameworks and servlet containers. Both projects used together forms excellent combination for daily development not only in Java but also in another JVM languages.
+     * DCEVM realizes hotswap on JVM level. HotSwapAgent does the same on level of Java frameworks and servlet containers. Both projects used together forms excellent combination for daily development not only in Java but also in another JVM languages.
      */
     private static void hotSwapAgent() throws Throwable {
 //        HotSwapAgent.createAgentJarFile()
