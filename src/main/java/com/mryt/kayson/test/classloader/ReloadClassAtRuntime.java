@@ -23,7 +23,17 @@ public class ReloadClassAtRuntime {
         hotSwapAgent();
     }
     /**
+     *In contrast to standard Java, where the hotswap is limited to in-body code changes, the DCEVM + HotswapAgent allow following code changes:
      *
+     * Add/remove/modify class fields.
+     * Add/remove/modify methods. Add/remove/modify method annotations
+     * Add/remove/modify classes including anonymous classes. HotswapAgent handless correct anonymous class redefinitions.
+     * Add/remove static member of classes. HotswapAgent handles static member initialization.
+     * Add/remove enum values
+     * Refresh framework and application server settings
+     * The only unsupported operation is hierarchy change (change the superclass or remove an interface).
+     *
+     * DCEVM realizes hotswap on JVM level. HotwapAgent does the same on level of Java frameworks and servlet containers. Both projects used together forms excellent combination for daily development not only in Java but also in another JVM languages.
      */
     private static void hotSwapAgent() throws Throwable {
 //        HotSwapAgent.createAgentJarFile()

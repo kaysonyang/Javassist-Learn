@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Premain-Class: com.mryt.kayson.test.javaagent.AgentMain
+Agent-Class: com.mryt.kayson.test.javaagent.AgentMain
+Can-Redefine-Classes: true
